@@ -1,4 +1,4 @@
-# MixedTrafficPlus
+# MixedTraffic Benchmark
 
 # News: The code will be coming soon!
 > **Optimizing Efficiency of Mixed Traffic through Reinforcement Learning: A Topology-Independent Approach and Benchmark**
