@@ -15,7 +15,7 @@ ubuntu
 ```
 conda create -n MixedTrafficPlus python=3.8
 conda activate MixedTrafficPlus
-conda env update -f cal_ql.yml
+conda env update -f MixedTrafficPlus.yml
 ```
 ### Install SUMO
 ```
