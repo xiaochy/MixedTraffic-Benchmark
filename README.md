@@ -4,7 +4,7 @@ Official code for the paper:
 >
 > Chuyang Xiao, Dawei Wang, Xinzheng Tang, Jia Pan, Yuexin Ma
 >
-> <a href='https://sites.google.com/berkeley.edu/mixedtrafficplus?usp=sharing'><img src='https://img.shields.io/badge/Project-Video-Green'></a>
+> <a href='https://arxiv.org/abs/2501.16728'><img src='https://img.shields.io/badge/arXiv-2301.05294-red'></a> <a href='https://sites.google.com/berkeley.edu/mixedtrafficplus?usp=sharing'><img src='https://img.shields.io/badge/Project-Video-Green'></a>
 
 ## Environment Set-up
 ### Requirements -- Anaconda Set-up
