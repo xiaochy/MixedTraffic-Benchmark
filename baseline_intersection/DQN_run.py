@@ -155,13 +155,5 @@ if __name__ == "__main__":
         results = trainer.train()
         #print("epoch = ",epoch)
     save_result = trainer.save(save_path)    
-        # print(f"Epoch: {epoch}, Reward: {results['episode_reward_mean']}")
-        
-        # if epoch % 10 == 0:  # Save checkpoint every 10 epochs
-        #     checkpoint = trainer.save(checkpoint_dir=save_path)
-        #     print(f"Checkpoint saved at {checkpoint}")
-
-    # if args.as_test:
-    #     check_learning_achieved(results, args.stop_reward)
 
     ray.shutdown()

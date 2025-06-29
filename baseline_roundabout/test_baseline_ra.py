@@ -33,8 +33,6 @@ args = parser.parse_args()
 with open("test_data/test_data.json","r") as file:
     data_list = json.load(file)
 
-# with open("test_data/test_data_400.json","r") as file:
-#     data_list = json.load(file)
 
 resume_dir = args.resume_dir
 save_dir = args.resume_dir
