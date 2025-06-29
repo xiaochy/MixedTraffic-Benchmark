@@ -55,6 +55,12 @@ cd our_roundabout
 python test_our_ra.py --resume-dir="the/path/to/the/checkpoint/you/want/to/resume" --wandb-id "wandb-id_you_want_to_use"
 ```
 
+## Model Checkpoints
+
+Pre-trained model checkpoints are available on Hugging Face Hub:
+- [MixedTrafficPlus Repository](https://huggingface.co/xiaochyVera/MixedTrafficPlus)
+- [RV=100% Model Checkpoint](https://huggingface.co/xiaochyVera/MixedTrafficPlus/tree/main/benchmark_training/large/rv%3D1.0) (trained with our method)
+
 ## Generate More Data
 You can put your osm files downloaded from openstreetmap.org to train_file or test_file folder and select the folder difficulty(mode = 400 veh/h, easy(1000 veh/h), middle(3000 veh/h), hard(5000 veh/h)). Then you can run
 ``` 
