@@ -323,6 +323,8 @@ class Env(MultiAgentEnv):
                 self.sumo_interface.tc.vehicle.setSpeedMode(veh_id,39)
             else:
                 self.vehicles[veh_id] = veh = Vehicle(id=veh_id, type="IDM", route=route, length=length, wait_time=0)
+                self.sumo_interface.tc.vehicle.setSpeedMode(veh_id,39)
+                # self.sumo_interface.tc.vehicle.setSpeedMode(veh_id,39)
             self.sumo_interface.set_color(veh, WHITE if veh.type=="IDM" else RED)
             # self.veh_count += 1
             # if self.veh_count == 1:
