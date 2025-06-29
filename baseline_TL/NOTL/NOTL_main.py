@@ -25,10 +25,10 @@ parser.add_argument(
 
 if __name__ == "__main__":
     args = parser.parse_args()
-    args = parser.parse_args()
-    args.cfg = "../../test_files/roundabout/easy/outputs/map-4_dict/map-4.sumo.cfg"
-    args.map_xml = "../../test_files/roundabout/easy/outputs/map-4_dict/map-4/map-4.net.xml"
-    args.wandb_name = "map_4_easy_NOTL_period=150"
+    # args = parser.parse_args()
+    # args.cfg = "../../test_files/roundabout/easy/outputs/map-4_dict/map-4.sumo.cfg"
+    # args.map_xml = "../../test_files/roundabout/easy/outputs/map-4_dict/map-4/map-4.net.xml"
+    # args.wandb_name = "map_4_easy_NOTL_period=150"
 
     
     ## TODO map xml could be parsed from sumocfg file

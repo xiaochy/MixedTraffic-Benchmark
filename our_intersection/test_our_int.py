@@ -30,10 +30,10 @@ for data in data_list:
 #data = data_list[1] #0 - 5
     cfg = data["cfg"]
     net_xml = data["net_xml"]
-    #wandb_id = extract_map_name(net_xml)+"xxx"
-    # wandb_name = extract_map_name(net_xml)+"_ours_test"
+
     latest_checkpoint = get_latest_checkpoint(resume_dir)
-    rv_rate_list = [0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+    # rv_rate_list = [0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+    rv_rate_list = [1.0]
     if args.wandb_id != "":
         #for i in range(5):
         for rv_rate in rv_rate_list:

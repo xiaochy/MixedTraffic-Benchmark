@@ -36,8 +36,8 @@ for data in data_list:
     cfg = data["cfg"]
     net_xml = data["net_xml"]
     #wandb_id = extract_map_name(net_xml)+"xxx"
-    rv_rate_list = [0.4,0.5,0.6,0.7,0.8,0.9,1.0]
-
+    # rv_rate_list = [0.4,0.5,0.6,0.7,0.8,0.9,1.0]
+    rv_rate_list = [0.5]
     for rv_rate in rv_rate_list:
         wandb_name = extract_map_name(net_xml)+"("+extract_scenario(net_xml)+")_rv="+str(rv_rate)+"_bench=large"
         latest_checkpoint = get_latest_checkpoint(resume_dir)

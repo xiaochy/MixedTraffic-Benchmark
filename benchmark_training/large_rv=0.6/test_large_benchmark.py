@@ -32,12 +32,11 @@ with open("test_data/test_data.json","r") as file:
 resume_dir = args.resume_dir
 save_dir = args.resume_dir
 for data in data_list:
-#data = data_list[3] #0 - 59
     cfg = data["cfg"]
     net_xml = data["net_xml"]
-    #wandb_id = extract_map_name(net_xml)+"xxx"
-    rv_rate_list = [0.4,0.5,0.6,0.7,0.8,0.9,1.0]
-
+    # rv_rate_list = [0.4,0.5,0.6,0.7,0.8,0.9,1.0]
+    rv_rate_list = [0.6]
+    
     for rv_rate in rv_rate_list:
         wandb_name = extract_map_name(net_xml)+"("+extract_scenario(net_xml)+")_rv="+str(rv_rate)+"_bench=large"+"_train=0.6"
         latest_checkpoint = get_latest_checkpoint(resume_dir)

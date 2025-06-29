@@ -23,7 +23,6 @@ with open("test_data/test_data.json","r") as file:
     data_list = json.load(file)
 
 for i in range(len(data_list)):
-# for i in range(27, len(data_list)):
     data = data_list[i]
     cfg = data["cfg"]
     net_xml = data["net_xml"]
@@ -31,7 +30,7 @@ for i in range(len(data_list)):
         wandb_name = extract_map_name(net_xml)+"(ra)_"+extract_mode(net_xml) + "_TL_red=20"
     elif "intersection" in net_xml:
         wandb_name = extract_map_name(net_xml)+"(int)_"+extract_mode(net_xml) + "_TL_red=20"
-    #for i in range(5):
+
     if args.wandb_id != "":
         command = [
             "python","TL_main.py",

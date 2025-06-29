@@ -19,13 +19,11 @@ args = parser.parse_args()
 with open("train_data/train_data.json","r") as file:
     data_list = json.load(file)
     
-# with open("train_data_small/train_data.json","r") as file:
-#     data_list = json.load(file)
 
 resume_dir = args.resume_dir
 save_dir = args.resume_dir
 for outer_loop in range(100):
-    for i in range(12,len(data_list)):
+    for i in range(len(data_list)):
         data = data_list[i]
         cfg = data["cfg"]
         net_xml = data["net_xml"]

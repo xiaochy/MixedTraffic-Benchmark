@@ -44,9 +44,9 @@ if __name__ == "__main__":
     # args.map_xml = "../../test_files/roundabout/hard/outputs/map-4_dict/map-4/map-4.net.xml"
     # args.wandb_name = "map-4(ra)_hard_TL_red=20"
 
-    args.cfg = "../../test_files/intersection/easy/outputs/map-10_dict/map-10.sumo.cfg"
-    args.map_xml = "../../test_files/intersection/easy/outputs/map-10_dict/map-10/map-10.net.xml"
-    args.wandb_name = "map-10(int)_easy_TL_red=20"
+    # args.cfg = "../../test_files/intersection/easy/outputs/map-10_dict/map-10.sumo.cfg"
+    # args.map_xml = "../../test_files/intersection/easy/outputs/map-10_dict/map-10/map-10.net.xml"
+    # args.wandb_name = "map-10(int)_easy_TL_red=20"
 
     
     ## TODO map xml could be parsed from sumocfg file
